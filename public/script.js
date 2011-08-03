@@ -28,17 +28,17 @@ getKey.table = {
 }
 
 //var socket = io.connect('http://localhost:8080');
-var socket = io.connect('http://192.168.168.226:8080');
+var socket = io.connect('http://localhost:8080');
 
 var currKeys = {}
 
 function update() {
   var props = {
-    yaw:   !!currKeys['f'] - !!currKeys['a'],
-    roll:  !!currKeys['j'] - !!currKeys['k'],
-    pitch: (!!currKeys['H'] || !!currKeys['l']) -
-           (!!currKeys['h'] || !!currKeys['L']),
-    gaz:   !!currKeys['s'] - !!currKeys['d']
+    yaw:   !!currKeys['d'] - !!currKeys['a'],
+    roll:  !!currKeys['k'] - !!currKeys['i'],
+    pitch: (!!currKeys['J'] || !!currKeys['l']) -
+           (!!currKeys['j'] || !!currKeys['L']),
+    gaz:   !!currKeys['w'] - !!currKeys['s']
   }
   console.log(props)
   socket.send(JSON.stringify(props))
@@ -55,6 +55,7 @@ document.addEventListener('keydown', function(evt) {
   
   if (key == 'enter' || key == 'up') {
     socket.send('takeoff')
+    socket.send('_initNavData')
   } else if (key == 'esc' || key == 'down') {
     socket.send('land')
 	} else if (key == 'r') {

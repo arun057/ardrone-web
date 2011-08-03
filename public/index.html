@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
@@ -8,26 +8,45 @@
 <meta name=author name="Tim Baumann">
 
 <body>
+<div id="header">
+<div class="one">
+<h1>Arunram Kalaiselvan</h1>
+<h2>@looneydoodle</h2>
+</div>
+<div class="one">
+<h1>Ankur Oberoi<h1>
+<h2>@ankuroberoi</h2>
+</div>
+<div class="one">
+<h1>Anand Chandrasekaran</h1>
+<h2>@achand8238</h2>
+</div>
+</div>
+<div class="two">
+	<h1>Browser based controlling interface for the Parrot AR Drone<h1>
+	<h2>A node.js implementation at #gamehackday</h2>
+</div>
+</div>
 <div id=keys>
   <div id=left-hand>
-    <div class=key id=key_a title="turn left"><span class=label>a</span><span class=action>&#x21ba;</span></div>
-    <div class=key id=key_s title=up><span class=label>s</span><span class=action>&uArr;</span></div>
-    <div class=key id=key_d title=down><span class=label>d</span><span class=action>&dArr;</span></div>
-    <div class=key id=key_f title="turn right"><span class=label>f</span><span class=action>&#x21bb;</span></div>
+    <div class=keyl1 id=key_a title="turn left"><span class=label>D</span><span class=action>&#x21ba;</span></div>
+    <div class=keyu1 id=key_w title=up><span class=label>W</span><span class=action>&uArr;</span></div>
+    <div class=keyd1 id=key_d title=down><span class=label>S</span><span class=action>&dArr;</span></div>
+    <div class=keyr1 id=key_f title="turn right"><span class=label>A</span><span class=action>&#x21bb;</span></div>
   </div>
   <div id=right-hand>
-    <div class=key id=key_h title=left><span class=label>h</span><span class=action>&larr;</span></div>
-    <div class=key id=key_j title=backward><span class=label>j</span><span class=action>&darr;</span></div>
-    <div class=key id=key_k title=forward><span class=label>k</span><span class=action>&uarr;</span></div>
-    <div class=key id=key_l title=right><span class=label>l</span><span class=action>&rarr;</span></div>
+    <div class=keyl id=key_h title=left><span class=label>J</span><span class=action>&larr;</span></div>
+    <div class=keyd id=key_j title=backward><span class=label>K</span><span class=action>&darr;</span></div>
+    <div class=keyu id=key_k title=forward><span class=label>I</span><span class=action>&uarr;</span></div>
+    <div class=keyr id=key_l title=right><span class=label>L</span><span class=action>&rarr;</span></div>
   </div>
   <div id=special-keys>
-    <div class=key id=key_enter title=takeoff><span class=label>&crarr;</span><span class=action>&#x21a5;</span></div>
-    <div class=key id=key_esc title=land><span class=label>Esc</span><span class=action>&#x21a7;</span></div>
-    <div class=key id=key_r title=recover><span class=label>R</span><span class=action>R</span></div>
+    <div class=keytakeoff id=key_enter title=takeoff><span class=label>&crarr;</span><span class=action>&#x21a5;</span></div>
+    <div class=keyland id=key_esc title=land><span class=label>Esc</span><span class=action>&#x21a7;</span></div>
+    <div class=keyreset id=key_r title=recover><span class=label>R</span><span class=action>R</span></div>
   </div>
 </div>
 
 <!--<script src="http://localhost:8080/socket.io/socket.io.js"></script>-->
-<script src="http://192.168.168.226:8080/socket.io/socket.io.js"></script>
+<script src="http://localhost:8080/socket.io/socket.io.js"></script>
 <script src=/script.js></script>

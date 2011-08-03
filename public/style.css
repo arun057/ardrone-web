@@ -1,50 +1,223 @@
-* { margin: 0; padding: 0; }
-
-body {
-  background: #333; color: #fff;
-  font-family: Helvetica, Arial, sans-serif;
+*
+{
+	margin: 0;
+	padding: 0;
 }
-
-#keys {
-  margin-top: 500px;
-  text-align: center;
+BODY
+{
+	background: #333;
+	color: #FFF;
+	font-family: Helvetica, Arial, sans-serif;
 }
-#left-hand, #right-hand, #special-keys {
-  display: inline-block;
+#header
+{
+	background: #000;
+	height:70px;
+	border-bottom: 2px solid #ddd;
 }
-#left-hand, #right-hand {
-  margin-right: 18px;
+.one
+{
+	float:left;
+	margin:0 25px;
+	padding-right: 25px;
+	border-right:5px solid #333;
 }
-.key {
-  display: inline-block;
-  position: relative;
-  width: 50px; height: 50px;
-  margin-right: 8px;
-  background: #666;
-  color: #333;
-  line-height: 40px;
+.two{
+	padding:25px 0 20px;
+	text-align: center;
+	background: #171717;
+	border-bottom: 2px dotted white;
 }
-.key:hover, .key.active {
-  background: #000; color: #fff;
+#keys
+{
+	margin-top: 80px;
+	text-align: center;
 }
-.key .label, .key .action {
-  display: block;
-  position: absolute; top: 5px; left: 5px; bottom: 5px; right: 5px;
-  font-family: Helvetica, Arial, sans-serif; font-weight: bold;
-  cursor: default;
+#left-hand, #right-hand, #special-keys
+{
+	display: block;
+	width: 200px;
+	height: 200px;
 }
-.key .label {
-  font-size: 15px; line-height: 15px;
-  text-align: left;
+#left-hand, #right-hand
+{
+	margin-right: 18px;
 }
-#key_enter .label, .key .action {
-  font-size: 28px; line-height: 40px;
-  text-align: center;
+.keytakeoff
+{
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	margin-right: 4px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-left: 53%;
+	margin-bottom: -11px;
+	margin-top: 62px;
 }
-.key .label { display: block; }
-.key .action { display: none; }
-.key:hover .label, .key.active .label { display: none; }
-.key:hover .action, .key.active .action { display: block; }
-#right-hand .key .action {
-  line-height: 32px;
+.keyland
+{
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	margin-right: 4px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-left: 53%;
+	margin-bottom: -80px;
+	margin-top: 136px;
+}
+.keyreset
+{
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	margin-right: 4px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-left: 53%;
+	margin-bottom: -11px;
+	margin-top: -13px;
+}
+.keyl1, .keyr1, .keyu1, .keyd1
+{
+	width: 50px;
+	height: 50px;
+	margin-right: 8px;
+	background: #666;
+	color: #333;
+}
+.keyl1
+{
+	margin-left: 172px;
+	margin-right: -2px;
+	margin-top: 11px;
+	margin-bottom: -117px;
+}
+.keyr1
+{
+	margin-right: 35px;
+	margin-left: 37px;
+	margin-bottom: 0;
+	margin-top: -50px;
+}
+.keyd1
+{
+	margin-left: 102px;
+	margin-bottom: -7px;
+	margin-top: 15px;
+}
+.keyu1
+{
+	margin-top: 0;
+	margin-left: 102px;
+}
+.keyd
+{
+	width: 50px;
+	height: 50px;
+	margin-right: -47px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-bottom: 133px;
+	margin-left: 197%;
+	margin-top: 9px;
+	margin: -154px 0 148px 450px;
+}
+.keyu
+{
+	width: 51px;
+	height: 53px;
+	margin-right: 8px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-bottom: -120px;
+	margin-left: 454px;
+	margin-top: -265px;
+	padding-top: 0px;
+}
+.keyl
+{
+	width: 50px;
+	height: 50px;
+	margin-right: 8px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-bottom: 102px;
+	margin-top: -203px;
+	margin-left: 192%;
+	padding-top: 0px;
+	padding: 0;
+}
+.keyr
+{
+	width: 50px;
+	height: 50px;
+	margin-right: 356px;
+	background: #666;
+	color: #333;
+	line-height: 40px;
+	margin-bottom: -186px;
+	margin-top: 133px;
+	padding-top: 0px;
+	padding-left: 0;
+	margin-left: 259%;
+}
+.key:hover, .key.active, .keyl:hover, .keyr:hover, .keyu:hover, .keydown:hover
+{
+	background: #000;
+	color: #FFF;
+}
+.key .label, .key .action
+{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	bottom: 5px;
+	right: 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	cursor: default;
+}
+.key .label
+{
+	font-size: 15px;
+	line-height: 15px;
+	text-align: left;
+}
+#key_enter .label, .key .action
+{
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+}
+.key .label
+{
+	display: block;
+}
+.key .action
+{
+	display: none;
+}
+.key:hover .label, .key.active .label
+{
+	display: none;
+}
+.key:hover .action, .key.active .action
+{
+	display: block;
+}
+#right-hand .key .action
+{
+	line-height: 32px;
 }
